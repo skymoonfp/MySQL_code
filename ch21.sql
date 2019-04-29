@@ -1,0 +1,21 @@
+SHOW DATABASES;
+USE MYSQL;
+use learnsql;
+
+-- p.252
+SELECT * FROM SYS.TABLES;
+
+SELECT USER
+FROM USER;
+
+SELECT TABLE_NAME
+FROM TABLES 
+WHERE TABLE_SCHEMA = 'LEARNSQL';
+
+select table_name 
+from information_schema.tables 
+where table_schema='learnsql';
+
+SELECT GRANTEE, PRIVILEGE_TYPE
+FROM USER_PRIVILEGE
+WHERE GRANTEE = 'BRANDON';
